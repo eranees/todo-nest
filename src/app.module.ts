@@ -12,7 +12,7 @@ import appConfig from './config/app.config';
     ConfigModule.forRoot({
       isGlobal: true,
       load: [databaseConfig, appConfig],
-      envFilePath: ['.env.dev'],
+      envFilePath: ['.env'],
     }),
     TypeOrmModule.forRootAsync({
       useClass: TypeOrmConfigService,
